@@ -1,0 +1,67 @@
+OSTRZEGAWCZE:
+A-1 - niebezpieczny skręt w prawo
+A-2 - niebezpieczny skręt w lewo
+A-3 - niebezpieczne zakręty, pierwszy w prawo
+A-4 - niebezpieczne zakręty, pierwszy w lewo
+A-14 - roboty drogowe
+A-17 - dzieci
+A-18b - zwierzęta dzikie
+A-20 - odcinek jezdni o ruchu dwukierunkowym
+A-24 - rowerzyści
+A-29 - sygnały świetlne
+A-32 - oszronienie jezdni
+
+ZAKAZU:
+B-1 - zakaz ruchu w obu kierunkach
+B-2 - zakaz wjazdu
+B-5 - zakaz wjazdu samochodów ciężarowych
+B-18 - zakaz wjazdu pojazdów o rzeczywistej masie 10t
+B-20 - stop
+B-21 - zakaz skrętu w lewo
+B-22 - zakaz skrętu w prawo
+B-25 - zakaz wyprzedzania przez pojazd silnikowy pojazdów silnikowych wielośladowych
+B-26 - zakaz wyrzedzania przez samchody cieżarowe pojazdów silnikowych wielośladowych
+B-33 - ograniczenie prędkości do 70
+b-36 - zakaz zatrzymywania się
+
+NAKAZU:
+c-2 - nakaz skrętu w prawo
+c-4 - nakaz skrętu w lewo
+c-5 - nakaz jazdy prosto
+c-6 - nakaz jazdy prosto lub w prawo
+c-7 - nakaz jazdy prosto lub w lewo
+c-12 - ruch okrężny
+c-13 - droga rowerowa
+c-16 - droga dla pieszych
+C-13-C-16 droga dla pieszych i rowerzystów
+
+INFORMACYJNY
+D-1 - droga z pierwszeństwem
+D-2 - koniec drogi z pierwszeństwem
+D-6 - przejście dla pieszych
+D-7 - początek drogi ekspresowek
+d-9 początek autostrady
+d-14 - koniec pasa ruchu
+d-15 - przystanek autobusowy
+d-18 - parking
+d-40 - strefa zamieszkania
+d-42 - obszar zabudowania
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
