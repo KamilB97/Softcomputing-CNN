@@ -3,13 +3,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-import cv2
-import tensorflow as tf
+#import cv2
+#import tensorflow as tf
 from PIL import Image, ImageOps
 from sklearn.model_selection import train_test_split
-from keras.utils import to_categorical
-from keras.models import Sequential, load_model
-from keras.layers import Conv2D, MaxPool2D, Dense, Flatten, Dropout
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import Conv2D, MaxPool2D, Dense, Flatten, Dropout
+
 
 ################## METHODS ##################
 def scenario_gray(image): #grayscale picture
@@ -18,7 +19,7 @@ def scenario_black_white_normal(image, treshold):
     fn = lambda x: 255 if x > treshold else 0
     image = image.convert('L').point(fn, mode='1')
     return image
-def scenario_black_white_granular(image, treshold):
+def scenario_black_white_granular(image):
     image = image.convert('1') # morre granuar image - better readability of signs in my opinion
     return image
 
@@ -131,3 +132,4 @@ plt.xlabel('epochs')
 plt.ylabel('loss')
 plt.legend()
 plt.show()
+

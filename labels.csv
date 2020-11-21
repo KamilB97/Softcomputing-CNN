@@ -1,1 +1,42 @@
-ClassId;Name0;niebezpieczny skret w prawo1;niebezpieczny skret w lewo2;niebezpieczne zakrety, pierwszy w prawo3;niebezpieczne zakrety, pierwszy w lewo4;roboty drogowe5;dzieci6;dzikie zwierzeta7;odcinek jezdni o ruchu dwukierunkowym8;rowerzysci9;sygnaly swietlne10;oszronienie jezdni11;zakaz ruchu w obu kierunkach12;zakaz wjazdu13;zakaz wjazdu samochodow ciezarowych14;zakaz wjazdu pojazdow o rzeczywistej masie 10t15;stop16;zakaz skretu w lewo17;zakaz skretu w prawo18;zakaz wyprzedzania przez pojazd silnikowy pojazd�w silnikowych wielosladowych19;zakaz wyrzedzania przez samchody ciezarowe pojazdow silnikowych wielosladowych20;ograniczenie predkosci do 7021;zakaz zatrzymywania si?22;nakaz skretu w prawo23;nakaz skretu w lewo24;nakaz jazdy prosto25;nakaz jazdy prosto lub w prawo26;nakaz jazdy prosto lub w lewo27;ruch okrezny28;droga rowerowa29;droga dla pieszych30;droga dla pieszych i rowerzystow31;droga z pierwszenstwem32;koniec drogi z pierwszenstwem33;przejscie dla pieszych34;poczatek drogi ekspresowej35;poczatek autostrady36;koniec pasa ruchu37;przystanek autobusowy38;parking39;strefa zamieszkania40;obszar zabudowania
+ClassId,Name
+0,niebezpieczny skret w prawo
+1,niebezpieczny skret w lewo
+2,niebezpieczne zakrety  pierwszy w prawo
+3,niebezpieczne zakrety  pierwszy w lewo
+4,roboty drogowe
+5,dzieci
+6,dzikie zwierzeta
+7,odcinek jezdni o ruchu dwukierunkowym
+8,rowerzysci
+9,sygnaly swietlne
+10,oszronienie jezdni
+11,zakaz ruchu w obu kierunkach
+12,zakaz wjazdu
+13,zakaz wjazdu samochodow ciezarowych
+14,zakaz wjazdu pojazdow o rzeczywistej masie 10t
+15,stop
+16,zakaz skretu w lewo
+17,zakaz skretu w prawo
+18,zakaz wyprzedzania przez pojazd silnikowy pojazd�w silnikowych wielosladowych
+19,zakaz wyrzedzania przez samchody ciezarowe pojazdow silnikowych wielosladowych
+20,ograniczenie predkosci do 70
+21,zakaz zatrzymywania sie
+22,nakaz skretu w prawo
+23,nakaz skretu w lewo
+24,nakaz jazdy prosto
+25,nakaz jazdy prosto lub w prawo
+26,nakaz jazdy prosto lub w lewo
+27,ruch okrezny
+28,droga rowerowa
+29,droga dla pieszych
+30,droga dla pieszych i rowerzystow
+31,droga z pierwszenstwem
+32,koniec drogi z pierwszenstwem
+33,przejscie dla pieszych
+34,poczatek drogi ekspresowej
+35,poczatek autostrady
+36,koniec pasa ruchu
+37,przystanek autobusowy
+38,parking
+39,strefa zamieszkania
+40,obszar zabudowania
