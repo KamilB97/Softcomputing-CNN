@@ -40,11 +40,12 @@ predictions_4 = np.empty((number_of_test_signs_categories,number_of_test_files_i
 predictions = [predictions_1, predictions_2, predictions_3, predictions_4]
 
 def calculateEffectiveness():
-  total = 0
-  good = 0
+
   effectivenessList = np.empty(number_of_test_cases)
 
   for i in range(0, number_of_test_cases):
+    total = 0
+    good = 0
     for j in range(0, number_of_test_signs_categories):
       for k in range(0, number_of_test_files_in_dir):
         if (int(verdict[i][j][k]) == int(signs_indexes_in_test_dataset[j])):
