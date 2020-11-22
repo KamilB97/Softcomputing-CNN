@@ -39,6 +39,24 @@ predictions_4 = np.empty((number_of_test_signs_categories,number_of_test_files_i
 
 predictions = [predictions_1, predictions_2, predictions_3, predictions_4]
 
+def calculateEffectiveness():
+  total = 0
+  good = 0
+  effectivenessList = np.empty(number_of_test_cases)
+
+  for i in range(0, number_of_test_cases):
+    for j in range(0, number_of_test_signs_categories):
+      for k in range(0, number_of_test_files_in_dir):
+        if (int(verdict[i][j][k]) == int(signs_indexes_in_test_dataset[j])):
+          good += 1
+          total += 1
+        else:
+          total += 1
+    print("fog level: ",i ,", g/b/t: ", good, "/", (total-good), " ", total)
+    effectivenessList[i] = (good/total)
+    print("clculateEffectiveness- i val ", str(i), "\n")
+  return effectivenessList
+
 # load test images
 for i in range(0,4):
   # j_num = 0
@@ -118,6 +136,8 @@ for i in range(0,number_of_test_cases):
       print(" verdict ",verdict[i][j][k]," ",list_clasification_names[int(verdict[i][j][k])], ':', round(predictions[i][j][k][int(verdict[i][j][k])] * 100, 2), '%')
       print("\n")
 
+print(calculateEffectiveness())
+
 #TODO: case for insert just one picture and get prediction (for GUI)
 
 #path from received from gui
@@ -162,3 +182,4 @@ def predictImage():
 
 #uncomment to test method
 #predictImage()
+
