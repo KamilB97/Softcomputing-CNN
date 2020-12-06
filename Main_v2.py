@@ -31,6 +31,8 @@ labels = []
 classes = 40
 filename = "labels.csv"
 
+scenarioBlackAndWhite = True
+
 # load dictionary
 # with open(filename, 'r') as data:
 #     for line in csv.reader(data):
@@ -44,19 +46,21 @@ for i in range(classes):
     path = os.path.join(os.getcwd(), 'datasets', str(i))
     
     images = os.listdir(path)
-    showFirst = True
+    #DISPLAY PLOTS: change here to show the pictures
+    showFirst = False
     for j in images:
         try:
             ######## SCENARIOS ########
             image = Image.open(path + '/' + j)
             image = image.resize((30, 30))
-            image = scenario_gray(image)      # uncomment to scenario 1
-
-            # threshold = 75                                      # uncomment to scenario 2
-            # image = scenario_black_white_normal(image, threshold) # uncomment to scenario 2
+            if(not scenarioBlackAndWhite):
+                image = scenario_gray(image)      # uncomment to scenario 1
+            else:
+                threshold = 75                                      # uncomment to scenario 2
+                image = scenario_black_white_normal(image, threshold) # uncomment to scenario 2
 
             #threshold = 75                                         # uncomment to scenario 3
-            #image = scenario_black_white_granular(image, threshold)  # uncomment to scenario 3
+            #image = scenario_black_white_granular(image)  # uncomment to scenario 3
 
 
             # counter += 1    # if you want more picture samples (more windows with pictures), decrease it. If want less samples, increase
@@ -78,8 +82,8 @@ for i in range(classes):
         except:
             print("Error loading image")
 
-#Display images
-plt.show()
+#DISPLAY PLOTS: and uncomment this
+#plt.show()
 
 # Converting lists into numpy arrays
 data = np.array(data)
@@ -88,7 +92,13 @@ print(data.shape, labels.shape)
 
 X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=68)
 
-print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
+print(X_train.shape)
+
+print(X_train.shape)
+
+if(scenarioBlackAndWhite):
+    X_train = X_train.reshape(list(X_train.shape) + [1])
+    X_test = X_test.reshape(list(X_test.shape) + [1])
 
 #Converting the labels into one hot encoding
 y_train = to_categorical(y_train, classes)
